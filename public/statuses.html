@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lead Statuses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Add Lead</a></li>
+        <li><a href="statuses.html">View Statuses</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <!-- Вставьте этот код где-то над таблицей -->
+    <div class="date-filter">
+        <label for="dateFrom">From:</label>
+        <input type="date" id="dateFrom">
+        <label for="dateTo">To:</label>
+        <input type="date" id="dateTo">
+        <button id="filterButton">Filter</button>
+    </div>
+
+    <table id="statusesTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>FTD</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Table data will be populated here -->
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

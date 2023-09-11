@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lead Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Add Lead</a></li>
+        <li><a href="statuses.html">View Statuses</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <form id="leadForm">
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="tel" id="phone" placeholder="Phone" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="popup" class="hidden">
+        <p id="popupMessage"></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
